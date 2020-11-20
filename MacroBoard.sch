@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MacroBoard-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX1
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX1
 U 1 1 5F9C229E
 P 750 1050
 F 0 "MX1" H 900 950 60  0000 C CNN
@@ -64,7 +65,7 @@ Wire Wire Line
 Wire Wire Line
 	700  1250 700  1200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX10
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX10
 U 1 1 5F9DD866
 P 750 7350
 F 0 "MX10" H 900 7250 60  0000 C CNN
@@ -114,7 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	700  7550 700  7500
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX9
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX9
 U 1 1 5F9DDFBD
 P 750 6650
 F 0 "MX9" H 900 6550 60  0000 C CNN
@@ -153,7 +154,7 @@ Wire Wire Line
 Wire Wire Line
 	700  6850 700  6800
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX8
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX8
 U 1 1 5F9DEBA2
 P 750 5950
 F 0 "MX8" H 900 5850 60  0000 C CNN
@@ -203,7 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	700  6150 700  6100
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX7
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX7
 U 1 1 5F9E01B0
 P 750 5250
 F 0 "MX7" H 900 5150 60  0000 C CNN
@@ -253,7 +254,7 @@ Wire Wire Line
 Wire Wire Line
 	700  5450 700  5400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX6
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX6
 U 1 1 5F9E18CD
 P 750 4550
 F 0 "MX6" H 900 4450 60  0000 C CNN
@@ -303,7 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	700  4750 700  4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX5
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX5
 U 1 1 5F9E3057
 P 750 3850
 F 0 "MX5" H 900 3750 60  0000 C CNN
@@ -353,7 +354,7 @@ Wire Wire Line
 Wire Wire Line
 	700  4050 700  4000
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX4
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX4
 U 1 1 5F9E69C3
 P 750 3150
 F 0 "MX4" H 900 3050 60  0000 C CNN
@@ -403,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	700  3350 700  3300
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX3
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX3
 U 1 1 5F9E7918
 P 750 2450
 F 0 "MX3" H 900 2350 60  0000 C CNN
@@ -453,7 +454,7 @@ Wire Wire Line
 Wire Wire Line
 	700  2650 700  2600
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX2
+L MacroBoard-rescue:MX-NoLED-MX_Alps_Hybrid MX2
 U 1 1 5F9E89F5
 P 750 1750
 F 0 "MX2" H 900 1650 60  0000 C CNN
@@ -745,20 +746,9 @@ F 4 "C45874" H 5200 2850 50  0001 C CNN "JLCID"
 	1    5200 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J3
-U 1 1 5FA2F456
-P 10850 1750
-F 0 "J3" H 10930 1792 50  0000 L CNN
-F 1 "NP" H 10930 1701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10850 1750 50  0001 C CNN
-F 3 "~" H 10850 1750 50  0001 C CNN
-	1    10850 1750
-	1    0    0    -1  
-$EndComp
-Text Label 10250 1750 0    50   ~ 0
-SDA
 Text Label 10250 1850 0    50   ~ 0
+SDA
+Text Label 10250 1750 0    50   ~ 0
 SCL
 Wire Wire Line
 	5800 2550 6550 2550
@@ -1496,8 +1486,6 @@ Wire Wire Line
 Connection ~ 9550 5800
 Wire Wire Line
 	9550 5800 9750 5800
-Wire Wire Line
-	10650 1600 10650 1650
 $Comp
 L Device:R R16
 U 1 1 60085289
@@ -1719,89 +1707,68 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x04_Female J5
 U 1 1 5FD3B55D
-P 10900 1100
-F 0 "J5" H 10928 1076 50  0000 L CNN
-F 1 "NP" H 10928 985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10900 1100 50  0001 C CNN
-F 3 "~" H 10900 1100 50  0001 C CNN
-	1    10900 1100
+P 10850 1650
+F 0 "J5" H 10878 1626 50  0000 L CNN
+F 1 "NP" H 10878 1535 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10850 1650 50  0001 C CNN
+F 3 "~" H 10850 1650 50  0001 C CNN
+	1    10850 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 1600 10650 1600
 $Comp
 L power:GND #PWR0129
 U 1 1 5FA4128B
-P 10000 1600
-F 0 "#PWR0129" H 10000 1350 50  0001 C CNN
-F 1 "GND" V 9900 1500 50  0000 C CNN
-F 2 "" H 10000 1600 50  0001 C CNN
-F 3 "" H 10000 1600 50  0001 C CNN
-	1    10000 1600
+P 10100 1550
+F 0 "#PWR0129" H 10100 1300 50  0001 C CNN
+F 1 "GND" V 10000 1450 50  0000 C CNN
+F 2 "" H 10100 1550 50  0001 C CNN
+F 3 "" H 10100 1550 50  0001 C CNN
+	1    10100 1550
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0147
-U 1 1 5FD89BC1
-P 10550 1100
-F 0 "#PWR0147" H 10550 850 50  0001 C CNN
-F 1 "GND" V 10550 900 50  0000 C CNN
-F 2 "" H 10550 1100 50  0001 C CNN
-F 3 "" H 10550 1100 50  0001 C CNN
-	1    10550 1100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10550 1100 10700 1100
-Wire Wire Line
-	10700 1200 10500 1200
-Wire Wire Line
-	10700 1300 10500 1300
-Text Label 10550 1300 0    50   ~ 0
-SDA
-Text Label 10550 1200 0    50   ~ 0
-SCL
-Text Label 10400 1000 0    50   ~ 0
+Text Label 10250 1650 0    50   ~ 0
 V_OLED
 $Comp
 L Jumper:Jumper_3_Bridged12 JP4
 U 1 1 5FED9FD8
-P 9450 800
-F 0 "JP4" H 9450 1004 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 9450 913 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9450 800 50  0001 C CNN
-F 3 "~" H 9450 800 50  0001 C CNN
-	1    9450 800 
+P 9750 1150
+F 0 "JP4" H 9750 1354 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 9750 1263 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9750 1150 50  0001 C CNN
+F 3 "~" H 9750 1150 50  0001 C CNN
+	1    9750 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 950  9450 1000
-Wire Wire Line
-	9450 1000 10700 1000
-Wire Wire Line
-	9700 800  9950 800 
+	10000 1150 10250 1150
 $Comp
 L power:+3V3 #PWR0148
 U 1 1 5FF2A0DB
-P 9950 800
-F 0 "#PWR0148" H 9950 650 50  0001 C CNN
-F 1 "+3V3" H 9965 973 50  0000 C CNN
-F 2 "" H 9950 800 50  0001 C CNN
-F 3 "" H 9950 800 50  0001 C CNN
-	1    9950 800 
+P 10250 1150
+F 0 "#PWR0148" H 10250 1000 50  0001 C CNN
+F 1 "+3V3" H 10265 1323 50  0000 C CNN
+F 2 "" H 10250 1150 50  0001 C CNN
+F 3 "" H 10250 1150 50  0001 C CNN
+	1    10250 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 800  8950 800 
+	9500 1150 9250 1150
 $Comp
 L power:+5V #PWR0149
 U 1 1 5FF443AD
-P 8950 800
-F 0 "#PWR0149" H 8950 650 50  0001 C CNN
-F 1 "+5V" H 8965 973 50  0000 C CNN
-F 2 "" H 8950 800 50  0001 C CNN
-F 3 "" H 8950 800 50  0001 C CNN
-	1    8950 800 
+P 9250 1150
+F 0 "#PWR0149" H 9250 1000 50  0001 C CNN
+F 1 "+5V" H 9265 1323 50  0000 C CNN
+F 2 "" H 9250 1150 50  0001 C CNN
+F 3 "" H 9250 1150 50  0001 C CNN
+	1    9250 1150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10650 1650 9750 1650
+Wire Wire Line
+	9750 1300 9750 1650
+Wire Wire Line
+	10650 1550 10100 1550
 $EndSCHEMATC
